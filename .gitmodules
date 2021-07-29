@@ -1,0 +1,6 @@
+[submodule "external/kicad-symbols"]
+	path = external/kicad-symbols
+	url = https://gitlab.com/kicad/libraries/kicad-symbols.git
+[submodule "external/65xx"]
+	path = external/65xx
+	url = https://github.com/mkeller0815/65xx_Library.git
