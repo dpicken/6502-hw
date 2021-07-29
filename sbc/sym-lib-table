@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name 65xx)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/65xx/KiCad/65xx.lib)(options "")(descr ""))
+  (lib (name 74xx)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/74xx.lib)(options "")(descr ""))
+  (lib (name eeprom)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Memory_EEPROM.lib)(options "")(descr ""))
+  (lib (name ram)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Memory_RAM.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/power.lib)(options "")(descr ""))
+  (lib (name device)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Device.lib)(options "")(descr ""))
+)
