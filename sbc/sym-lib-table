@@ -7,4 +7,6 @@
   (lib (name device)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Device.lib)(options "")(descr ""))
   (lib (name connector)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Connector.lib)(options "")(descr ""))
   (lib (name oscillator)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Oscillator.lib)(options "")(descr ""))
+  (lib (name ds1813)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/misc/ds1813.lib)(options "")(descr ""))
+  (lib (name switch)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Switch.lib)(options "")(descr ""))
 )
