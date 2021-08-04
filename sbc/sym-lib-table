@@ -6,4 +6,5 @@
   (lib (name power)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/power.lib)(options "")(descr ""))
   (lib (name device)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Device.lib)(options "")(descr ""))
   (lib (name connector)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name oscillator)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Oscillator.lib)(options "")(descr ""))
 )
