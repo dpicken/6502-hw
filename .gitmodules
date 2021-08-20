@@ -4,3 +4,6 @@
 [submodule "external/65xx"]
 	path = external/65xx
 	url = https://github.com/mkeller0815/65xx_Library.git
+[submodule "external/kicad-footprints"]
+	path = external/kicad-footprints
+	url = https://gitlab.com/kicad/libraries/kicad-footprints.git
