@@ -1188,7 +1188,7 @@ U 1 1 61142AF5
 P 8400 5550
 F 0 "X1" H 8744 5596 50  0000 L CNN
 F 1 "CXO_DIP14" H 8744 5505 50  0000 L CNN
-F 2 "dip:DIP-14_W7.62mm_Socket" H 8850 5200 50  0001 C CNN
+F 2 "oscillator:Oscillator_DIP-14" H 8850 5200 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 8300 5550 50  0001 C CNN
 	1    8400 5550
 	1    0    0    -1  
