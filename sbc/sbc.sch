@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "6502 SBC"
-Date ""
+Date "2021-09-09"
 Rev "1.0"
 Comp ""
 Comment1 ""

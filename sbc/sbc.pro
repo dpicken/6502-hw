@@ -1,4 +1,4 @@
-update=Thu 09 Sep 2021 07:00:22 PM PDT
+update=Fri 10 Sep 2021 02:53:05 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -12,12 +12,22 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=sbc.net
 CopperLayerCount=2
-BoardThickness=0.8128
+BoardThickness=1.6002
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -247,13 +257,3 @@ uViaDrill=0.254
 dPairWidth=0.1524
 dPairGap=0.1524
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1

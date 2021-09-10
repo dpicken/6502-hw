@@ -523,23 +523,23 @@ Wire Bus Line
 $Comp
 L 74xx:7400 U6
 U 1 1 61067C42
-P 3800 5250
-F 0 "U6" H 3800 5575 50  0000 C CNN
-F 1 "7400" H 3800 5484 50  0000 C CNN
-F 2 "dip:DIP-14_W7.62mm_Socket" H 3800 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 3800 5250 50  0001 C CNN
-	1    3800 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:7400 U6
-U 2 1 610684A0
 P 4800 5250
 F 0 "U6" H 4800 5575 50  0000 C CNN
 F 1 "7400" H 4800 5484 50  0000 C CNN
 F 2 "dip:DIP-14_W7.62mm_Socket" H 4800 5250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn7400" H 4800 5250 50  0001 C CNN
-	2    4800 5250
+	1    4800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 2 1 610684A0
+P 3800 5250
+F 0 "U6" H 3800 5575 50  0000 C CNN
+F 1 "7400" H 3800 5484 50  0000 C CNN
+F 2 "dip:DIP-14_W7.62mm_Socket" H 3800 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 3800 5250 50  0001 C CNN
+	2    3800 5250
 	1    0    0    -1  
 $EndComp
 $Comp
