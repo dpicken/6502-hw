@@ -1,0 +1,342 @@
+EESchema Schematic File Version 4
+LIBS:sbc-exp-control-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "6502 SBC Expansion - Controller"
+Date "2021-09-15"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:R_Network07 RN1
+U 1 1 6142419D
+P 3300 3350
+F 0 "RN1" H 3688 3396 50  0000 L CNN
+F 1 "1K" H 3688 3305 50  0000 L CNN
+F 2 "resistor:R_Array_SIP8" V 3775 3350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3300 3350 50  0001 C CNN
+	1    3300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW1
+U 1 1 6149A8C0
+P 4400 2900
+F 0 "SW1" H 4400 3185 50  0000 C CNN
+F 1 "U" H 4400 3094 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 4400 3100 50  0001 C CNN
+F 3 "~" H 4400 3100 50  0001 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW2
+U 1 1 6149E1BC
+P 4400 3400
+F 0 "SW2" H 4400 3685 50  0000 C CNN
+F 1 "D" H 4400 3594 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 4400 3600 50  0001 C CNN
+F 3 "~" H 4400 3600 50  0001 C CNN
+	1    4400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW3
+U 1 1 6149E449
+P 3900 3150
+F 0 "SW3" H 3900 3435 50  0000 C CNN
+F 1 "L" H 3900 3344 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 3900 3350 50  0001 C CNN
+F 3 "~" H 3900 3350 50  0001 C CNN
+	1    3900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW4
+U 1 1 6149E6A4
+P 4900 3150
+F 0 "SW4" H 4900 3435 50  0000 C CNN
+F 1 "R" H 4900 3344 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW5
+U 1 1 6149E910
+P 5900 3150
+F 0 "SW5" H 5900 3435 50  0000 C CNN
+F 1 "A" H 5900 3344 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 5900 3350 50  0001 C CNN
+F 3 "~" H 5900 3350 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW6
+U 1 1 6149ECA4
+P 6400 3150
+F 0 "SW6" H 6400 3435 50  0000 C CNN
+F 1 "B" H 6400 3344 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 6400 3350 50  0001 C CNN
+F 3 "~" H 6400 3350 50  0001 C CNN
+	1    6400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L switch:SW_Push_Dual_x2 SW7
+U 1 1 6149EF8F
+P 6900 3150
+F 0 "SW7" H 6900 3435 50  0000 C CNN
+F 1 "C" H 6900 3344 50  0000 C CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 6900 3350 50  0001 C CNN
+F 3 "~" H 6900 3350 50  0001 C CNN
+	1    6900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2900 4650 2900
+Wire Wire Line
+	4650 2900 4650 3700
+Wire Wire Line
+	4100 4250 4100 3800
+Wire Wire Line
+	5100 4200 5100 3850
+Wire Wire Line
+	6100 4150 6100 3900
+Wire Wire Line
+	3700 3150 3700 2500
+Wire Wire Line
+	3700 2500 4200 2500
+Wire Wire Line
+	6700 2500 6700 3150
+Wire Wire Line
+	6200 3150 6200 2500
+Connection ~ 6200 2500
+Wire Wire Line
+	6200 2500 6700 2500
+Wire Wire Line
+	5700 3150 5700 2500
+Connection ~ 5700 2500
+Wire Wire Line
+	5700 2500 6200 2500
+Wire Wire Line
+	4700 3150 4700 2500
+Connection ~ 4700 2500
+Wire Wire Line
+	4700 2500 5700 2500
+Wire Wire Line
+	4200 2900 4200 2500
+Connection ~ 4200 2500
+Wire Wire Line
+	4200 2500 4700 2500
+Wire Wire Line
+	4200 3400 4200 2900
+Connection ~ 4200 2900
+$Comp
+L power:+5V #PWR0101
+U 1 1 614C2446
+P 3700 2500
+F 0 "#PWR0101" H 3700 2350 50  0001 C CNN
+F 1 "+5V" H 3715 2673 50  0000 C CNN
+F 2 "" H 3700 2500 50  0001 C CNN
+F 3 "" H 3700 2500 50  0001 C CNN
+	1    3700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 2500
+$Comp
+L device:LED D1
+U 1 1 614C6FA3
+P 7350 3150
+F 0 "D1" H 7343 2895 50  0000 C CNN
+F 1 "LED" H 7343 2986 50  0000 C CNN
+F 2 "led:LED_D5.0mm" H 7350 3150 50  0001 C CNN
+F 3 "~" H 7350 3150 50  0001 C CNN
+	1    7350 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4200 7200 3150
+Wire Wire Line
+	5950 4200 7200 4200
+$Comp
+L power:GND #PWR0102
+U 1 1 614EB584
+P 7500 3550
+F 0 "#PWR0102" H 7500 3300 50  0001 C CNN
+F 1 "GND" H 7505 3377 50  0000 C CNN
+F 2 "" H 7500 3550 50  0001 C CNN
+F 3 "" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4600 5950 4200
+NoConn ~ 6250 4600
+NoConn ~ 6150 4600
+NoConn ~ 6050 4600
+$Comp
+L connector:Conn_01x13_Male J1
+U 1 1 6142495C
+P 5750 4800
+F 0 "J1" V 5677 4778 50  0000 C CNN
+F 1 "P" V 5586 4778 50  0000 C CNN
+F 2 "connector:PinHeader_1x13_P2.54mm_Vertical" H 5750 4800 50  0001 C CNN
+F 3 "~" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 3150 7500 3550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6150A704
+P 6350 4600
+F 0 "#FLG0101" H 6350 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 4773 50  0000 C CNN
+F 2 "" H 6350 4600 50  0001 C CNN
+F 3 "~" H 6350 4600 50  0001 C CNN
+	1    6350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61510759
+P 5150 4600
+F 0 "#FLG0102" H 5150 4675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 4773 50  0000 C CNN
+F 2 "" H 5150 4600 50  0001 C CNN
+F 3 "~" H 5150 4600 50  0001 C CNN
+	1    5150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61521E95
+P 6350 4600
+F 0 "#PWR0103" H 6350 4350 50  0001 C CNN
+F 1 "GND" V 6355 4472 50  0000 R CNN
+F 2 "" H 6350 4600 50  0001 C CNN
+F 3 "" H 6350 4600 50  0001 C CNN
+	1    6350 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 615234C8
+P 5150 4600
+F 0 "#PWR0104" H 5150 4450 50  0001 C CNN
+F 1 "+5V" V 5165 4728 50  0000 L CNN
+F 2 "" H 5150 4600 50  0001 C CNN
+F 3 "" H 5150 4600 50  0001 C CNN
+	1    5150 4600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 4600
+Connection ~ 6350 4600
+Wire Wire Line
+	5250 4350 5250 4600
+Wire Wire Line
+	4650 4350 5250 4350
+Wire Wire Line
+	5850 4050 5850 4600
+Wire Wire Line
+	7100 4050 5850 4050
+Wire Wire Line
+	5750 4100 5750 4600
+Wire Wire Line
+	6600 4100 5750 4100
+Wire Wire Line
+	5650 4150 5650 4600
+Wire Wire Line
+	6100 4150 5650 4150
+Wire Wire Line
+	5550 4200 5550 4600
+Wire Wire Line
+	5100 4200 5550 4200
+Wire Wire Line
+	5350 4300 5350 4600
+Wire Wire Line
+	5350 4300 4600 4300
+Wire Wire Line
+	5450 4250 5450 4600
+Wire Wire Line
+	5450 4250 4100 4250
+Wire Wire Line
+	3000 3550 3000 3600
+Wire Wire Line
+	3000 3600 6600 3600
+Wire Wire Line
+	6600 4100 6600 3600
+Wire Wire Line
+	6600 3600 6600 3150
+Connection ~ 6600 3600
+Wire Wire Line
+	3100 3550 3100 3650
+Wire Wire Line
+	3100 3650 7100 3650
+Wire Wire Line
+	7100 4050 7100 3650
+Wire Wire Line
+	7100 3650 7100 3150
+Connection ~ 7100 3650
+Wire Wire Line
+	4600 4300 4600 3750
+Wire Wire Line
+	3200 3550 3200 3700
+Wire Wire Line
+	3200 3700 4650 3700
+Connection ~ 4650 3700
+Wire Wire Line
+	4650 3700 4650 4350
+Wire Wire Line
+	3300 3550 3300 3750
+Wire Wire Line
+	3300 3750 4600 3750
+Connection ~ 4600 3750
+Wire Wire Line
+	4600 3750 4600 3400
+Wire Wire Line
+	3400 3550 3400 3800
+Wire Wire Line
+	3400 3800 4100 3800
+Connection ~ 4100 3800
+Wire Wire Line
+	4100 3800 4100 3150
+Wire Wire Line
+	3500 3550 3500 3850
+Wire Wire Line
+	3500 3850 5100 3850
+Connection ~ 5100 3850
+Wire Wire Line
+	5100 3850 5100 3150
+Wire Wire Line
+	3600 3550 3600 3900
+Wire Wire Line
+	3600 3900 6100 3900
+Connection ~ 6100 3900
+Wire Wire Line
+	6100 3900 6100 3150
+$Comp
+L power:GND #PWR?
+U 1 1 6157BBDC
+P 2850 3150
+F 0 "#PWR?" H 2850 2900 50  0001 C CNN
+F 1 "GND" H 2855 2977 50  0000 C CNN
+F 2 "" H 2850 3150 50  0001 C CNN
+F 3 "" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3150 3000 3150
+$EndSCHEMATC
