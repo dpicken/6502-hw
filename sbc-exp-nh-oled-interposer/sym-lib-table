@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name connector)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/power.lib)(options "")(descr ""))
+)

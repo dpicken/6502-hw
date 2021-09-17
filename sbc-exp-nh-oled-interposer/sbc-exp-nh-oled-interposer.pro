@@ -1,4 +1,4 @@
-update=Thu 16 Sep 2021 08:40:33 PM PDT
+update=Thu 16 Sep 2021 08:37:39 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=sbc.net
+LastNetListRead=sbc-exp-nh-oled-interposer.net
 CopperLayerCount=2
 BoardThickness=1.6002
 AllowMicroVias=0
@@ -27,7 +27,7 @@ MinViaDiameter=0.508
 MinViaDrill=0.254
 MinMicroViaDiameter=0.508
 MinMicroViaDrill=0.254
-MinHoleToHole=0.254
+MinHoleToHole=0.1524
 TrackWidth1=0.1524
 ViaDiameter1=0.508
 ViaDrill1=0.254
@@ -35,9 +35,9 @@ dPairWidth1=0.1524
 dPairGap1=0.1524
 dPairViaGap1=0.25
 SilkLineWidth=0.12
-SilkTextSizeV=1
-SilkTextSizeH=1
-SilkTextSizeThickness=0.15
+SilkTextSizeV=0.762
+SilkTextSizeH=0.762
+SilkTextSizeThickness=0.127
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
@@ -189,11 +189,11 @@ Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=0
 [pcbnew/Layer.F.Adhes]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.Paste]
 Enabled=0
 [pcbnew/Layer.F.Paste]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.B.SilkS]
 Enabled=1
 [pcbnew/Layer.F.SilkS]

@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+LIBS:sbc-exp-nh-oled-interposer-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "6502 SBC Expansion - NHD 0420CW OLED Interposer"
+Date "2021-09-16"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L connector:Conn_01x20_Female J2
+U 1 1 614371EA
+P 5400 3350
+F 0 "J2" V 5565 3280 50  0000 C CNN
+F 1 "NH OLED" V 5474 3280 50  0000 C CNN
+F 2 "pin_socket:PinSocket_1x20_P2.54mm_Vertical" H 5400 3350 50  0001 C CNN
+F 3 "~" H 5400 3350 50  0001 C CNN
+	1    5400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L connector:Conn_01x13_Male J1
+U 1 1 61437C51
+P 5600 4450
+F 0 "J1" V 5527 4428 50  0000 C CNN
+F 1 "P" V 5436 4428 50  0000 C CNN
+F 2 "pin_header:PinHeader_1x13_P2.54mm_Vertical" H 5600 4450 50  0001 C CNN
+F 3 "~" H 5600 4450 50  0001 C CNN
+	1    5600 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 6143AFF8
+P 5000 4250
+F 0 "#PWR0101" H 5000 4100 50  0001 C CNN
+F 1 "+5V" H 5015 4423 50  0000 C CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6143B3C5
+P 6200 4250
+F 0 "#PWR0102" H 6200 4000 50  0001 C CNN
+F 1 "GND" H 6205 4077 50  0000 C CNN
+F 2 "" H 6200 4250 50  0001 C CNN
+F 3 "" H 6200 4250 50  0001 C CNN
+	1    6200 4250
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5900 4250
+NoConn ~ 6000 4250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6144A1D2
+P 5000 4250
+F 0 "#FLG0101" H 5000 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 4423 50  0000 C CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "~" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6144A4CD
+P 6200 4250
+F 0 "#FLG0102" H 6200 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6200 4423 50  0000 C CNN
+F 2 "" H 6200 4250 50  0001 C CNN
+F 3 "~" H 6200 4250 50  0001 C CNN
+	1    6200 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 4250
+Connection ~ 6200 4250
+$Comp
+L power:GND #PWR0103
+U 1 1 6144C265
+P 6500 3700
+F 0 "#PWR0103" H 6500 3450 50  0001 C CNN
+F 1 "GND" H 6505 3527 50  0000 C CNN
+F 2 "" H 6500 3700 50  0001 C CNN
+F 3 "" H 6500 3700 50  0001 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3550 6400 3550
+Wire Wire Line
+	6200 3550 6200 3600
+Wire Wire Line
+	6200 3600 6500 3600
+Connection ~ 6500 3600
+Wire Wire Line
+	6500 3600 6500 3550
+Wire Wire Line
+	5900 3550 5900 3650
+Wire Wire Line
+	5900 3650 6500 3650
+Connection ~ 6500 3650
+Wire Wire Line
+	6500 3650 6500 3600
+Wire Wire Line
+	5400 3550 5400 3700
+Wire Wire Line
+	5400 3700 6500 3700
+Wire Wire Line
+	6500 3700 6500 3650
+Wire Wire Line
+	5300 3550 5300 3700
+Wire Wire Line
+	5300 3700 5400 3700
+Connection ~ 5400 3700
+Wire Wire Line
+	5200 3550 5200 3700
+Wire Wire Line
+	5200 3700 5300 3700
+Connection ~ 5300 3700
+Wire Wire Line
+	5100 3550 5100 3700
+Wire Wire Line
+	5100 3700 5200 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	4500 3550 4500 3700
+Wire Wire Line
+	4500 3700 5100 3700
+Connection ~ 5100 3700
+$Comp
+L power:+5V #PWR0104
+U 1 1 6145401D
+P 4400 3950
+F 0 "#PWR0104" H 4400 3800 50  0001 C CNN
+F 1 "+5V" H 4415 4123 50  0000 C CNN
+F 2 "" H 4400 3950 50  0001 C CNN
+F 3 "" H 4400 3950 50  0001 C CNN
+	1    4400 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 3700
+Wire Wire Line
+	4600 3550 4600 3950
+Wire Wire Line
+	4600 3950 4400 3950
+Wire Wire Line
+	4700 3550 4700 3950
+Wire Wire Line
+	4700 3950 4600 3950
+Connection ~ 4600 3950
+Wire Wire Line
+	6300 3550 6300 3950
+Wire Wire Line
+	6300 3950 6100 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	6100 3550 6100 3950
+Connection ~ 6100 3950
+Wire Wire Line
+	6100 3950 4700 3950
+Wire Wire Line
+	5800 3550 5800 4250
+Wire Wire Line
+	5700 3550 5700 4250
+Wire Wire Line
+	5600 3550 5600 4250
+Wire Wire Line
+	5500 3550 5500 4250
+Wire Wire Line
+	5000 3550 5000 3800
+Wire Wire Line
+	5000 3800 5300 3800
+Wire Wire Line
+	5300 3800 5300 4250
+Wire Wire Line
+	4900 3550 4900 3850
+Wire Wire Line
+	4900 3850 5200 3850
+Wire Wire Line
+	5200 3850 5200 4250
+Wire Wire Line
+	4800 3550 4800 4000
+Wire Wire Line
+	4800 4000 5100 4000
+Wire Wire Line
+	5100 4000 5100 4250
+NoConn ~ 5400 4250
+Wire Wire Line
+	6000 3550 6000 4200
+Wire Wire Line
+	6000 4200 6100 4200
+Wire Wire Line
+	6100 4200 6100 4250
+$EndSCHEMATC
