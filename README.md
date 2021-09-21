@@ -38,7 +38,7 @@ A controller for the single board computer.
 |PCB|[SBC Expansion Controller](https://oshpark.com/shared_projects/oqDuR7hJ)|1|
 |Pin header|[13 pin header](https://www.jameco.com/z/7000-1X13SG-R-Jameco-Valuepro-13-Pin-Breakaway-Pin-Header-Vertical-0-100-Pitch_2294679.html)|1|
 |Switches|[Tactile momentary switches](https://www.jameco.com/z/BTS-1102B-2-Jameco-Valuepro-Switch-Push-Button-Tactile-SPST-OFF-ON-15-VDC-20mA-Actuator-Height-0-13-Inch_149948.html)|7|
-|LED|[5mm LED](https://www.jameco.com/z/LVB3330-Jameco-Valuepro-LED-Blue-Diffused-5mm-T-1-3-4-430nm-10mcd-36VA_138691.html)|1|
+|LED|[5mm 5V LED](https://www.sparkfun.com/products/14977)|1|
 |Resistor array|[7 1K](https://www.digikey.com/en/products/detail/cts-resistor-products/77081102P/1000658)|1|
 
 ## SBC Expansion - Display - 20x4 OLED
