@@ -386,24 +386,24 @@ X A1 9 -400 800 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# oscillator_CXO_DIP14
+# oscillator_CXO_DIP8
 #
-DEF oscillator_CXO_DIP14 X 0 10 Y Y 1 F N
+DEF oscillator_CXO_DIP8 X 0 10 Y Y 1 F N
 F0 "X" -200 250 50 H V L CNN
-F1 "oscillator_CXO_DIP14" 50 -250 50 H V L CNN
-F2 "Oscillator:Oscillator_DIP-14" 450 -350 50 H I C CNN
+F1 "oscillator_CXO_DIP8" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_DIP-8" 450 -350 50 H I C CNN
 F3 "" -100 0 50 H I C CNN
-ALIAS TFT680 GTXO-14T
+ALIAS TFT660
 $FPLIST
- Oscillator*DIP*14*
+ Oscillator*DIP*8*
 $ENDFPLIST
 DRAW
 S -200 200 200 -200 0 1 10 f
 P 9 0 1 0 -75 -25 -50 -25 -50 25 -25 25 -25 -25 0 -25 0 25 25 25 25 -25 N
 X EN 1 -300 0 100 R 50 50 1 1 I
-X Vcc 14 0 300 100 D 50 50 1 1 W
-X GND 7 0 -300 100 U 50 50 1 1 W
-X OUT 8 300 0 100 L 50 50 1 1 O
+X GND 4 0 -300 100 U 50 50 1 1 W
+X OUT 5 300 0 100 L 50 50 1 1 O
+X Vcc 8 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -479,30 +479,20 @@ X A1 9 -500 600 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# switch_SW_Push_Dual
+# switch_tactile_SW_Tactile_Push
 #
-DEF switch_SW_Push_Dual SW 0 40 Y N 1 F N
+DEF switch_tactile_SW_Tactile_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "switch_SW_Push_Dual" 0 -270 50 H V C CNN
+F1 "switch_tactile_SW_Tactile_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
-C -80 -200 20 0 1 0 N
 C -80 0 20 0 1 0 N
-C 80 -200 20 0 1 0 N
 C 80 0 20 0 1 0 N
-P 2 0 1 0 0 -120 0 -140 N
-P 2 0 1 0 0 -80 0 -100 N
-P 2 0 1 0 0 -60 0 -40 N
-P 2 0 1 0 0 -20 0 0 N
-P 2 0 1 0 0 20 0 40 N
 P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 -150 -100 -150 N
 P 2 0 1 0 100 50 -100 50 N
 X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-X 3 3 -200 -200 100 R 50 50 0 1 P
-X 4 4 200 -200 100 L 50 50 0 1 P
+X 3 3 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #

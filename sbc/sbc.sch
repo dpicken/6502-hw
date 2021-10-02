@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "6502 SBC"
-Date "2021-09-09"
-Rev "1.0"
+Date "2021-10-02"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -41,7 +41,7 @@ L ram:HM62256BLP U4
 U 1 1 6103CC19
 P 6500 3200
 F 0 "U4" H 6500 4281 50  0000 C CNN
-F 1 "HM62256BLP" H 6500 4190 50  0000 C CNN
+F 1 "62256" H 6500 4190 50  0000 C CNN
 F 2 "dip:DIP-28_W15.24mm_Socket" H 6500 3100 50  0001 C CNN
 F 3 "https://web.mit.edu/6.115/www/document/62256.pdf" H 6500 3100 50  0001 C CNN
 	1    6500 3200
@@ -704,17 +704,6 @@ Wire Wire Line
 	8400 3400 8550 3400
 Entry Wire Line
 	8400 3000 8300 2900
-$Comp
-L 65xx:WD65C22 U5
-U 1 1 6104D277
-P 9200 3500
-F 0 "U5" V 9253 2422 60  0000 R CNN
-F 1 "WD65C22" V 9147 2422 60  0000 R CNN
-F 2 "dip:DIP-40_W15.24mm_Socket" H 8700 3700 60  0001 C CNN
-F 3 "" H 8700 3700 60  0000 C CNN
-	1    9200 3500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8550 2800 8050 2800
 Entry Wire Line
@@ -1183,17 +1172,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 2850 7650 4850
 $Comp
-L oscillator:CXO_DIP14 X1
-U 1 1 61142AF5
-P 8400 5550
-F 0 "X1" H 8744 5596 50  0000 L CNN
-F 1 "CXO_DIP14" H 8744 5505 50  0000 L CNN
-F 2 "oscillator:Oscillator_DIP-14" H 8850 5200 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 8300 5550 50  0001 C CNN
-	1    8400 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR024
 U 1 1 6117B29B
 P 8400 5850
@@ -1457,12 +1435,12 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 611C40F8
-P 2450 1550
-F 0 "#PWR09" H 2450 1300 50  0001 C CNN
-F 1 "GND" H 2455 1377 50  0000 C CNN
-F 2 "" H 2450 1550 50  0001 C CNN
-F 3 "" H 2450 1550 50  0001 C CNN
-	1    2450 1550
+P 2450 1500
+F 0 "#PWR09" H 2450 1250 50  0001 C CNN
+F 1 "GND" H 2455 1327 50  0000 C CNN
+F 2 "" H 2450 1500 50  0001 C CNN
+F 3 "" H 2450 1500 50  0001 C CNN
+	1    2450 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1479,31 +1457,8 @@ $EndComp
 Wire Wire Line
 	3150 1100 3150 1700
 Connection ~ 3150 1700
-$Comp
-L switch:SW_Push_Dual SW1
-U 1 1 611DA4FE
-P 2750 1350
-F 0 "SW1" V 2704 1498 50  0000 L CNN
-F 1 "RESET" V 2795 1498 50  0000 L CNN
-F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 2750 1550 50  0001 C CNN
-F 3 "~" H 2750 1550 50  0001 C CNN
-	1    2750 1350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2450 1550 2550 1550
-Wire Wire Line
-	2450 1300 2450 1550
-Connection ~ 2450 1550
-NoConn ~ 2750 1150
-NoConn ~ 2750 1550
-Wire Wire Line
-	2450 1100 2550 1100
-Wire Wire Line
-	2550 1150 2550 1100
-Connection ~ 2550 1100
-Wire Wire Line
-	2550 1100 3150 1100
+	2450 1300 2450 1500
 NoConn ~ 850  1500
 NoConn ~ 1250 1100
 $Comp
@@ -1511,8 +1466,8 @@ L device:CP1 C1
 U 1 1 610C6BA6
 P 1450 1050
 F 0 "C1" H 1565 1096 50  0000 L CNN
-F 1 "100uf" H 1565 1005 50  0000 L CNN
-F 2 "capacitor:CP_Radial_D5.0mm_P2.50mm" H 1450 1050 50  0001 C CNN
+F 1 "220uf" H 1565 1005 50  0000 L CNN
+F 2 "capacitor:CP_Radial_D8.0mm_P2.50mm" H 1450 1050 50  0001 C CNN
 F 3 "~" H 1450 1050 50  0001 C CNN
 	1    1450 1050
 	1    0    0    -1  
@@ -1522,8 +1477,6 @@ Wire Wire Line
 	1250 900  1450 900 
 Wire Wire Line
 	1450 1200 1450 1500
-Wire Wire Line
-	1450 1500 950  1500
 $Comp
 L power:+5V #PWR0101
 U 1 1 61205611
@@ -1536,9 +1489,64 @@ F 3 "" H 1450 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1450 900 
+Wire Wire Line
+	2450 1100 2550 1100
+$Comp
+L switch_tactile:SW_Tactile_Push SW1
+U 1 1 615C92B6
+P 2550 1300
+F 0 "SW1" V 2504 1448 50  0000 L CNN
+F 1 "RESET" V 2595 1448 50  0000 L CNN
+F 2 "switch:SW_TH_Tactile_Omron_B3F-10xx" H 2550 1500 50  0001 C CNN
+F 3 "~" H 2550 1500 50  0001 C CNN
+	1    2550 1300
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 1100
+Wire Wire Line
+	2550 1100 3150 1100
+Wire Wire Line
+	2550 1500 2450 1500
+$Comp
+L power:GND #PWR0102
+U 1 1 61630166
+P 1450 1500
+F 0 "#PWR0102" H 1450 1250 50  0001 C CNN
+F 1 "GND" H 1455 1327 50  0000 C CNN
+F 2 "" H 1450 1500 50  0001 C CNN
+F 3 "" H 1450 1500 50  0001 C CNN
+	1    1450 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1500
+$Comp
+L 65xx:WD65C22 U5
+U 1 1 6104D277
+P 9200 3500
+F 0 "U5" H 9200 2250 60  0000 C CNN
+F 1 "WD65C22" H 9200 2350 60  0000 C CNN
+F 2 "dip:DIP-40_W15.24mm_Socket" H 8700 3700 60  0001 C CNN
+F 3 "" H 8700 3700 60  0000 C CNN
+	1    9200 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  1500 1450 1500
+$Comp
+L oscillator:CXO_DIP8 X1
+U 1 1 6176538C
+P 8400 5550
+F 0 "X1" H 8744 5596 50  0000 L CNN
+F 1 "2Mhz" H 8744 5505 50  0000 L CNN
+F 2 "oscillator:Oscillator_DIP-8" H 8850 5200 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 8300 5550 50  0001 C CNN
+	1    8400 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 1500
 $Comp
 L connector:USB_B_Micro J1
-U 1 1 61270BB5
+U 1 1 6172B07E
 P 950 1100
 F 0 "J1" H 1007 1567 50  0000 C CNN
 F 1 "USB_B_Micro" H 1007 1476 50  0000 C CNN
