@@ -3,4 +3,5 @@
   (lib (name device)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Device.lib)(options "")(descr ""))
   (lib (name power)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/power.lib)(options "")(descr ""))
   (lib (name switch)(type Legacy)(uri /home/dan/projects/public/6502-hw/external/kicad-symbols/Switch.lib)(options "")(descr ""))
+  (lib (name switch_tactile)(type Legacy)(uri /home/dan/projects/public/6502-hw/kicad/symbols/switch_tactile.lib)(options "")(descr ""))
 )
