@@ -11,7 +11,7 @@
 
   (page A4)
   (title_block
-    (title "6502 SBC Expansion - New Haven OLED Interposer")
+    (title "6502 SBC Expansion - NHD 0420CW OLED Interposer")
     (date 2021-09-16)
     (rev 1.0)
   )
