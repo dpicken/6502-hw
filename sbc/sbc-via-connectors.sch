@@ -1,0 +1,480 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "6502 SBC"
+Date "2021-11-09"
+Rev "2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L connector:Conn_01x15_Female J2
+U 1 1 627EEA58
+P 2500 2700
+F 0 "J2" H 2528 2726 50  0000 L CNN
+F 1 "EXP_1A" H 2528 2635 50  0000 L CNN
+F 2 "connector:PinSocket_1x15_P2.54mm_Vertical" H 2500 2700 50  0001 C CNN
+F 3 "~" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 2200 0    50   BiDi ~ 0
+VIA1_PA0
+Text GLabel 2300 2300 0    50   BiDi ~ 0
+VIA1_PA1
+Text GLabel 2300 2400 0    50   BiDi ~ 0
+VIA1_PA2
+Text GLabel 2300 2500 0    50   BiDi ~ 0
+VIA1_PA3
+Text GLabel 2300 2600 0    50   BiDi ~ 0
+VIA1_PA4
+Text GLabel 2300 2700 0    50   BiDi ~ 0
+VIA1_PA5
+Text GLabel 2300 2800 0    50   BiDi ~ 0
+VIA1_PA6
+Text GLabel 2300 2900 0    50   BiDi ~ 0
+VIA1_PA7
+Text GLabel 2300 3000 0    50   Output ~ 0
+VIA1_CA1
+Text GLabel 2300 3100 0    50   BiDi ~ 0
+VIA1_CA2
+Text GLabel 2300 3200 0    50   BiDi ~ 0
+RESET
+NoConn ~ 2300 3400
+$Comp
+L power:+5V #PWR0110
+U 1 1 6280BEED
+P 2300 2000
+F 0 "#PWR0110" H 2300 1850 50  0001 C CNN
+F 1 "+5V" H 2315 2173 50  0000 C CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6280C15D
+P 2200 3300
+F 0 "#PWR0111" H 2200 3050 50  0001 C CNN
+F 1 "GND" H 2205 3127 50  0000 C CNN
+F 2 "" H 2200 3300 50  0001 C CNN
+F 3 "" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3300 2300 3300
+Text GLabel 1850 2100 0    50   Output ~ 0
+EXP_1A_LED
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6280CF5C
+P 1900 2000
+F 0 "#FLG0101" H 1900 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 2173 50  0000 C CNN
+F 2 "" H 1900 2000 50  0001 C CNN
+F 3 "~" H 1900 2000 50  0001 C CNN
+	1    1900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2100 1900 2100
+Wire Wire Line
+	1900 2000 1900 2100
+Connection ~ 1900 2100
+Wire Wire Line
+	1900 2100 2300 2100
+Text GLabel 4300 2200 0    50   BiDi ~ 0
+VIA1_PB0
+Text GLabel 4300 2400 0    50   BiDi ~ 0
+VIA1_PB2
+Text GLabel 4300 2500 0    50   BiDi ~ 0
+VIA1_PB3
+Text GLabel 4300 2600 0    50   BiDi ~ 0
+VIA1_PB4
+Text GLabel 4300 2700 0    50   BiDi ~ 0
+VIA1_PB5
+Text GLabel 4300 2800 0    50   BiDi ~ 0
+VIA1_PB6
+Text GLabel 4300 2900 0    50   BiDi ~ 0
+VIA1_PB7
+Text GLabel 4300 3000 0    50   BiDi ~ 0
+VIA1_CB1
+Text GLabel 4300 3100 0    50   BiDi ~ 0
+VIA1_CB2
+Text GLabel 4300 3200 0    50   BiDi ~ 0
+RESET
+NoConn ~ 4300 3400
+$Comp
+L power:+5V #PWR0112
+U 1 1 6280FAB6
+P 4300 2000
+F 0 "#PWR0112" H 4300 1850 50  0001 C CNN
+F 1 "+5V" H 4315 2173 50  0000 C CNN
+F 2 "" H 4300 2000 50  0001 C CNN
+F 3 "" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 6280FABC
+P 4200 3300
+F 0 "#PWR0113" H 4200 3050 50  0001 C CNN
+F 1 "GND" H 4205 3127 50  0000 C CNN
+F 2 "" H 4200 3300 50  0001 C CNN
+F 3 "" H 4200 3300 50  0001 C CNN
+	1    4200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3300 4300 3300
+Text GLabel 3850 2100 0    50   Output ~ 0
+EXP_1B_LED
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6280FAC4
+P 3900 2000
+F 0 "#FLG0102" H 3900 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 2173 50  0000 C CNN
+F 2 "" H 3900 2000 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2100 3900 2100
+Wire Wire Line
+	3900 2000 3900 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4300 2100
+Text GLabel 4300 2300 0    50   BiDi ~ 0
+VIA1_PB1
+$Comp
+L connector:Conn_01x15_Female J3
+U 1 1 6280FAA4
+P 4500 2700
+F 0 "J3" H 4528 2726 50  0000 L CNN
+F 1 "EXP_1B" H 4528 2635 50  0000 L CNN
+F 2 "connector:PinSocket_1x15_P2.54mm_Vertical" H 4500 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L connector:Conn_01x15_Female J4
+U 1 1 62821A78
+P 6500 2700
+F 0 "J4" H 6528 2726 50  0000 L CNN
+F 1 "EXP_2A" H 6528 2635 50  0000 L CNN
+F 2 "connector:PinSocket_1x15_P2.54mm_Vertical" H 6500 2700 50  0001 C CNN
+F 3 "~" H 6500 2700 50  0001 C CNN
+	1    6500 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 2200 0    50   BiDi ~ 0
+VIA2_PA0
+Text GLabel 6300 2300 0    50   BiDi ~ 0
+VIA2_PA1
+Text GLabel 6300 2400 0    50   BiDi ~ 0
+VIA2_PA2
+Text GLabel 6300 2500 0    50   BiDi ~ 0
+VIA2_PA3
+Text GLabel 6300 2600 0    50   BiDi ~ 0
+VIA2_PA4
+Text GLabel 6300 2700 0    50   BiDi ~ 0
+VIA2_PA5
+Text GLabel 6300 2800 0    50   BiDi ~ 0
+VIA2_PA6
+Text GLabel 6300 2900 0    50   BiDi ~ 0
+VIA2_PA7
+Text GLabel 6300 3000 0    50   Output ~ 0
+VIA2_CA1
+Text GLabel 6300 3100 0    50   BiDi ~ 0
+VIA2_CA2
+Text GLabel 6300 3200 0    50   BiDi ~ 0
+RESET
+NoConn ~ 6300 3400
+$Comp
+L power:+5V #PWR0114
+U 1 1 62821A8A
+P 6300 2000
+F 0 "#PWR0114" H 6300 1850 50  0001 C CNN
+F 1 "+5V" H 6315 2173 50  0000 C CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 62821A90
+P 6200 3300
+F 0 "#PWR0115" H 6200 3050 50  0001 C CNN
+F 1 "GND" H 6205 3127 50  0000 C CNN
+F 2 "" H 6200 3300 50  0001 C CNN
+F 3 "" H 6200 3300 50  0001 C CNN
+	1    6200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3300 6300 3300
+Text GLabel 5850 2100 0    50   Output ~ 0
+EXP_2A_LED
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 62821A98
+P 5900 2000
+F 0 "#FLG0103" H 5900 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5900 2173 50  0000 C CNN
+F 2 "" H 5900 2000 50  0001 C CNN
+F 3 "~" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2100 5900 2100
+Wire Wire Line
+	5900 2000 5900 2100
+Connection ~ 5900 2100
+Wire Wire Line
+	5900 2100 6300 2100
+Text GLabel 8300 2200 0    50   BiDi ~ 0
+VIA2_PB0
+Text GLabel 8300 2400 0    50   BiDi ~ 0
+VIA2_PB2
+Text GLabel 8300 2500 0    50   BiDi ~ 0
+VIA2_PB3
+Text GLabel 8300 2600 0    50   BiDi ~ 0
+VIA2_PB4
+Text GLabel 8300 2700 0    50   BiDi ~ 0
+VIA2_PB5
+Text GLabel 8300 2800 0    50   BiDi ~ 0
+VIA2_PB6
+Text GLabel 8300 2900 0    50   BiDi ~ 0
+VIA2_PB7
+Text GLabel 8300 3000 0    50   BiDi ~ 0
+VIA2_CB1
+Text GLabel 8300 3100 0    50   BiDi ~ 0
+VIA2_CB2
+Text GLabel 8300 3200 0    50   BiDi ~ 0
+RESET
+NoConn ~ 8300 3400
+$Comp
+L power:+5V #PWR0116
+U 1 1 62821AAD
+P 8300 2000
+F 0 "#PWR0116" H 8300 1850 50  0001 C CNN
+F 1 "+5V" H 8315 2173 50  0000 C CNN
+F 2 "" H 8300 2000 50  0001 C CNN
+F 3 "" H 8300 2000 50  0001 C CNN
+	1    8300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 62821AB3
+P 8200 3300
+F 0 "#PWR0117" H 8200 3050 50  0001 C CNN
+F 1 "GND" H 8205 3127 50  0000 C CNN
+F 2 "" H 8200 3300 50  0001 C CNN
+F 3 "" H 8200 3300 50  0001 C CNN
+	1    8200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3300 8300 3300
+Text GLabel 7850 2100 0    50   Output ~ 0
+EXP_2B_LED
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 62821ABB
+P 7900 2000
+F 0 "#FLG0104" H 7900 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 2173 50  0000 C CNN
+F 2 "" H 7900 2000 50  0001 C CNN
+F 3 "~" H 7900 2000 50  0001 C CNN
+	1    7900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2100 7900 2100
+Wire Wire Line
+	7900 2000 7900 2100
+Connection ~ 7900 2100
+Wire Wire Line
+	7900 2100 8300 2100
+Text GLabel 8300 2300 0    50   BiDi ~ 0
+VIA2_PB1
+$Comp
+L connector:Conn_01x15_Female J5
+U 1 1 62821AC6
+P 8500 2700
+F 0 "J5" H 8528 2726 50  0000 L CNN
+F 1 "EXP_2B" H 8528 2635 50  0000 L CNN
+F 2 "connector:PinSocket_1x15_P2.54mm_Vertical" H 8500 2700 50  0001 C CNN
+F 3 "~" H 8500 2700 50  0001 C CNN
+	1    8500 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 4750 0    50   Input ~ 0
+EXP_1A_LED
+Text GLabel 4800 5150 0    50   Input ~ 0
+EXP_1B_LED
+Text GLabel 4800 5600 0    50   Input ~ 0
+EXP_2A_LED
+Text GLabel 4800 6050 0    50   Input ~ 0
+EXP_2B_LED
+$Comp
+L power:GND #PWR0118
+U 1 1 62871A83
+P 5450 6050
+F 0 "#PWR0118" H 5450 5800 50  0001 C CNN
+F 1 "GND" H 5455 5877 50  0000 C CNN
+F 2 "" H 5450 6050 50  0001 C CNN
+F 3 "" H 5450 6050 50  0001 C CNN
+	1    5450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_Pack05_SIP RN1
+U 1 1 61834B9B
+P 5750 5100
+F 0 "RN1" V 5758 5304 50  0000 L CNN
+F 1 "100" V 5849 5304 50  0000 L CNN
+F 2 "resistor:R_Array_SIP10" V 6625 5100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5750 5100 50  0001 C CNN
+	1    5750 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L device:LED D2
+U 1 1 6188520F
+P 4950 4750
+F 0 "D2" H 4943 4495 50  0000 C CNN
+F 1 "EXP_1A" H 4943 4586 50  0000 C CNN
+F 2 "led:LED_Rectangular_W5.0mm_H2.0mm" H 4950 4750 50  0001 C CNN
+F 3 "~" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D3
+U 1 1 61886521
+P 4950 5150
+F 0 "D3" H 4943 4895 50  0000 C CNN
+F 1 "EXP_1B" H 4943 4986 50  0000 C CNN
+F 2 "led:LED_Rectangular_W5.0mm_H2.0mm" H 4950 5150 50  0001 C CNN
+F 3 "~" H 4950 5150 50  0001 C CNN
+	1    4950 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D4
+U 1 1 61888171
+P 4950 5600
+F 0 "D4" H 4943 5345 50  0000 C CNN
+F 1 "EXP_2A" H 4943 5436 50  0000 C CNN
+F 2 "led:LED_Rectangular_W5.0mm_H2.0mm" H 4950 5600 50  0001 C CNN
+F 3 "~" H 4950 5600 50  0001 C CNN
+	1    4950 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D1
+U 1 1 618845FA
+P 4950 4300
+F 0 "D1" H 4943 4045 50  0000 C CNN
+F 1 "POWER" H 4943 4136 50  0000 C CNN
+F 2 "led:LED_Rectangular_W5.0mm_H2.0mm" H 4950 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+	1    4950 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D5
+U 1 1 61888803
+P 4950 6050
+F 0 "D5" H 4943 5795 50  0000 C CNN
+F 1 "EXP_2B" H 4943 5886 50  0000 C CNN
+F 2 "led:LED_Rectangular_W5.0mm_H2.0mm" H 4950 6050 50  0001 C CNN
+F 3 "~" H 4950 6050 50  0001 C CNN
+	1    4950 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 6287257A
+P 4550 4300
+F 0 "#PWR0119" H 4550 4150 50  0001 C CNN
+F 1 "+5V" H 4565 4473 50  0000 C CNN
+F 2 "" H 4550 4300 50  0001 C CNN
+F 3 "" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4300 4800 4300
+Wire Wire Line
+	5100 4300 5300 4300
+Wire Wire Line
+	5100 6050 5300 6050
+Wire Wire Line
+	5300 5700 5550 5700
+Wire Wire Line
+	5300 4300 5300 4500
+Wire Wire Line
+	5300 4500 5550 4500
+Wire Wire Line
+	5100 4750 5300 4750
+Wire Wire Line
+	5300 4750 5300 4800
+Wire Wire Line
+	5300 4800 5550 4800
+Wire Wire Line
+	5100 5150 5300 5150
+Wire Wire Line
+	5300 5150 5300 5100
+Wire Wire Line
+	5300 5100 5550 5100
+Wire Wire Line
+	5100 5600 5300 5600
+Wire Wire Line
+	5300 5600 5300 5400
+Wire Wire Line
+	5300 5400 5550 5400
+Wire Wire Line
+	5300 5700 5300 6050
+Wire Wire Line
+	5450 6050 5450 5800
+Wire Wire Line
+	5450 4600 5550 4600
+Wire Wire Line
+	5550 4900 5450 4900
+Connection ~ 5450 4900
+Wire Wire Line
+	5450 4900 5450 4600
+Wire Wire Line
+	5550 5200 5450 5200
+Connection ~ 5450 5200
+Wire Wire Line
+	5450 5200 5450 4900
+Wire Wire Line
+	5550 5500 5450 5500
+Connection ~ 5450 5500
+Wire Wire Line
+	5450 5500 5450 5200
+Wire Wire Line
+	5550 5800 5450 5800
+Connection ~ 5450 5800
+Wire Wire Line
+	5450 5800 5450 5500
+$EndSCHEMATC
