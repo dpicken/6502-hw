@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name connector)(type Legacy)(uri /Users/dan/projects/public/6502-hw/external/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name device)(type Legacy)(uri /Users/dan/projects/public/6502-hw/external/kicad-symbols/Device.lib)(options "")(descr ""))
+  (lib (name ft245r)(type Legacy)(uri /Users/dan/projects/public/6502-hw/kicad/symbols/ft245r.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri /Users/dan/projects/public/6502-hw/external/kicad-symbols/power.lib)(options "")(descr ""))
+)

@@ -8,7 +8,7 @@ Schematics and PCBs for an [Eater](https://eater.net/6502) inspired 6502 compute
 
 ## SBC
 
-The core single board computer.
+The core single board computer ([schematic](/pdf/sbc.pdf)).
 
 ![sbc.pcb.jpeg](/jpeg/sbc.pcb.jpeg)
 
@@ -48,7 +48,7 @@ The core single board computer.
 
 ## SBC Expansion - Controller
 
-A controller for the single board computer.
+A controller for the single board computer ([schematic](/pdf/sbc-exp-control.pdf)).
 
 ![sbc-exp-control.pcb.jpeg](/jpeg/sbc-exp-control.pcb.jpeg)
 
@@ -62,7 +62,7 @@ A controller for the single board computer.
 
 ## SBC Expansion - Display - 20x4 OLED
 
-An OLED display for the single board computer.
+An OLED display for the single board computer ([schematic](/pdf/sbc-exp-nh-oled-interposer.pdf)).
 
 ![sbc-exp-nh-oled-interposer.pcb.jpeg](/jpeg/sbc-exp-nh-oled-interposer.pcb.jpeg)
 
@@ -78,6 +78,31 @@ An OLED display for the single board computer.
 ### Errata
 
  - Silkscreen: J1 value and J2 label overlap
+
+## SBC Expansion - USB Serial
+
+A USB serial interface ([schematic](/pdf/sbc-exp-usb-serial.pdf)).
+
+![sbc-exp-usb-serial.pcb.jpeg](/jpeg/sbc-exp-usb-serial.pcb.jpeg)
+
+### BOM
+
+|Reference|Description|Link|Quantity|
+|-|-|-|-|
+|-|PCB|[SBC Expansion USB Serial](/sbc-exp-usb-serial/sbc-exp-usb-serial.kicad_pcb)|1|
+|J1|USB connector|[Micro USB receptacle](https://www.digikey.com/en/products/detail/amphenol-icc-fci/10118194-0001LF/2785389)|1|
+|J2|Expansion connector|[15 pin right-angled header](https://www.mouser.com/ProductDetail/538-22-28-8151)|1|
+|J3|Expansion connector|[6 or 5 pin right-angled header](https://www.mouser.com/ProductDetail/538-22-28-8051)|1|
+|-|J3 flying lead|[6-way or 5-way cable assembly](https://www.mouser.com/ProductDetail/538-217796-1051)|1|
+|-|Flying lead SBC connector|6 or 5 pin header|1|
+|U1|USB to parallel FIFO|[FT245RL](https://www.mouser.com/ProductDetail/895-FT245RL)|1|
+|FB1|Ferrite bead (FTDI advised U1 EMI noise reduction)|[Ferrite bead](https://www.mouser.com/ProductDetail/652-MH2029-400Y)|1|
+|C1|Bypass capacitor|[10 nF ceramic capacitor](https://www.mouser.com/ProductDetail/581-SR151C103KAR)|1|
+|C2, C3|FTDI advised bodge capacitor|[47 pF](https://www.mouser.com/ProductDetail/581-SR151A470JAR)|2|
+|C4|Decoupling capacitor|[4.7 uF ceramic capacitor](https://www.mouser.com/ProductDetail/581-SR151C472KAATR1)|1|
+|C5, C6|Decoupling capacitors|[0.1 uF ceramic capacitor](https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/1C10Z5U104M050B/7056991)|2|
+|R1|Resistor|[10 K](https://www.mouser.com/ProductDetail/603-CFR25SJT-26-10K)|1|
+|R2, R3|FTDI advised bodge resisitors|[33 R](https://www.mouser.com/ProductDetail/603-CFR-12JR-52-33R)|2|
 
 ## Software
 
