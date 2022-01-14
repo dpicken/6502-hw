@@ -6,6 +6,8 @@ Schematics and PCBs for an [Eater](https://eater.net/6502) inspired 6502 compute
 
 ![sbc-with-controller-and-display.demo.jpeg](/jpeg/sbc-with-controller-and-display.demo.jpeg)
 
+![sbc-with-controller-and-display-and-serial.demo.jpeg](/jpeg/sbc-with-controller-and-display-and-serial.demo.jpeg)
+
 ## SBC
 
 The core single board computer ([schematic](/pdf/sbc.pdf)).
@@ -43,7 +45,6 @@ The core single board computer ([schematic](/pdf/sbc.pdf)).
 
 ### Errata
 
-  - D1-D5: spacing between LEDs too long (center-to-center is 7.6 mm, should be 7.0 mm); bend outter LED leads to fit, or, use suitable individual LEDs.
   - U8: footprint too close to U3 for the optional ZIF socket
 
 ## SBC Expansion - Controller
@@ -74,10 +75,6 @@ An OLED display for the single board computer ([schematic](/pdf/sbc-exp-nh-oled-
 |J2|OLED socket|[20 pin header receptacle](https://www.jameco.com/z/G85-20-R-Jameco-Valuepro-Header-Vertical-Receptacle-1-Row-20Cont-100-2-54mm-Female-Header-Receptacle_308567.html)|1|
 |-|Display|[NHD-0420CW](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0420CW-AW3/7942051)|1|
 |-|OLED connector|[20 pin header](https://www.jameco.com/z/7000-1X20SG-R-Jameco-Valuepro-Connector-Unshrouded-Header-20-Position-2-54mm-Solder-Straight-Thru-Hole_103369.html)|1|
-
-### Errata
-
- - Silkscreen: J1 value and J2 label overlap
 
 ## SBC Expansion - USB Serial
 
