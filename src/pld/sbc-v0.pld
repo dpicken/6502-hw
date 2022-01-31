@@ -1,0 +1,30 @@
+GAL22V10
+
+; Active-low signals '/' qualified
+; Pins [1, 12]
+PHI2  A15  A14 NC  NC  NC  NC  NC  NC   NC    NC    GND
+; Pins [13, 24]
+/W    NC   NC  NC  NC  NC  NC  NC  /IO  /RAM  /ROM  VCC
+
+; Equations
+; <signal_active> = <expression>
+; <expression>: List of AND product terms concatenated with the OR operator (disjunctive normal form).
+
+RAM = PHI2 & /A15 & /A14
+
+IO  = /A15 & A14
+
+; ROM active only for read (to avoid bus contention should the CPU attempt to write the hardwired OE ROM)
+ROM = PHI2 & /W & A15
+
+DESCRIPTION
+
+RAM: 64 pages (16 KiB)
+IO: 64 pages (16 KiB)
+ROM: 128 pages (32 KiB)
+
+Memory Map
+
+[0x0000, 0x4000): RAM
+[0x4000, 0x8000): IO
+[0x8000, 0xFFFF]: ROM
