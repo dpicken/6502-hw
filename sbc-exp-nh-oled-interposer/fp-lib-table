@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name pin_header)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/Connector_PinHeader_2.54mm.pretty)(options "")(descr ""))
-  (lib (name pin_socket)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/Connector_PinSocket_2.54mm.pretty)(options "")(descr ""))
-  (lib (name mount)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/MountingHole.pretty)(options "")(descr ""))
-)

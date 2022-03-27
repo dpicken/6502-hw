@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SW_Tactile_Push
-D Tactile push button switch, generic, four pins
-K switch normally-open pushbutton push-button
-F ~
-$ENDCMP
-#
-#End Doc Library

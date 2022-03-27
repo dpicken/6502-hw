@@ -1,7 +1,0 @@
-(fp_lib_table
-  (lib (name connector)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/Connector_PinHeader_2.54mm.pretty)(options "")(descr ""))
-  (lib (name led)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/LED_THT.pretty)(options "")(descr ""))
-  (lib (name resistor)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/Resistor_THT.pretty)(options "")(descr ""))
-  (lib (name switch)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/Button_Switch_THT.pretty)(options "")(descr ""))
-  (lib (name mount)(type KiCad)(uri $HOME/projects/public/6502-hw/external/kicad-footprints/MountingHole.pretty)(options "")(descr ""))
-)

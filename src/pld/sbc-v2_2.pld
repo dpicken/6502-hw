@@ -1,0 +1,42 @@
+GAL22V10
+
+; Active-low signals '/' qualified
+; Pins [1, 12]
+PHI2  A6    A7    A8    A9         A10    A11       A12    A13       A14    A15       GND
+; Pins [13, 24]
+/W    /IRQ  /ROM  /RAM  /RESERVED  /VIA1  /VIA1IRQ  /VIA3  /VIA3IRQ  /VIA2  /VIA2IRQ  VCC
+
+; Equations
+; <signal_active> = <expression>
+; <expression>: List of AND product terms concatenated with the OR operator (disjunctive normal form).
+
+; IRQ active if any VIA IRQ is active
+IRQ = VIA1IRQ # VIA2IRQ # VIA3IRQ
+
+; RAM page range: [0x00, 0x7F)
+RAM = PHI2 & /A15 & /A14    # PHI2 & /A15 & /A13    # PHI2 & /A15 & /A12    # PHI2 & /A15 & /A11    # PHI2 & /A15 & /A10    # PHI2 & /A15 & /A9    # PHI2 & /A15 & /A8
+
+; IO page range: [0x7F, 0x80)
+VIA1     = /A15 & A14 & A13 & A12 & A11 & A10 & A9 & A8 & /A7 & /A6
+VIA2     = /A15 & A14 & A13 & A12 & A11 & A10 & A9 & A8 & /A7 &  A6
+VIA3     = /A15 & A14 & A13 & A12 & A11 & A10 & A9 & A8 &  A7 & /A6
+RESERVED = /A15 & A14 & A13 & A12 & A11 & A10 & A9 & A8 &  A7 &  A6
+
+; ROM active only for read (to avoid bus contention should the CPU attempt to write the hardwired OE ROM)
+; ROM page range: [0x80, 0xFF]
+ROM = PHI2 & /W & A15
+
+DESCRIPTION
+
+RAM: 127 pages (32 KiB - 256 bytes)
+IO: 1 page (4 * 64 bytes)
+ROM: 128 pages (32 KiB)
+
+Memory Map
+
+[0x0000, 0x7F00): RAM
+[0x7F00, 0x7F40): VIA1
+[0x7F40, 0x7F80): VIA2
+[0x7F80, 0x7FC0): VIA3
+[0x7FC0, 0x8000): Reserved
+[0x8000, 0xFFFF]: ROM

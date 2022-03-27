@@ -1,0 +1,35 @@
+GAL22V10
+
+; Active-low signals '/' qualified
+; Pins [1, 12]
+PHI2  A6    A7    A8    A9         A10    A11       A12    A13       A14    A15       GND
+; Pins [13, 24]
+/W    /IRQ  /ROM  /RAM  /RESERVED  /VIA1  /VIA1IRQ  /VIA3  /VIA3IRQ  /VIA2  /VIA2IRQ  VCC
+
+; Equations
+; <signal_active> = <expression>
+; <expression>: List of AND product terms concatenated with the OR operator (disjunctive normal form).
+
+; IRQ active if any VIA IRQ is active
+IRQ = VIA1IRQ # VIA2IRQ # VIA3IRQ
+
+RAM = PHI2 & /A15 & /A14
+
+VIA2 = /A15 & A14 & A11
+VIA3 = /A15 & A14 & A12
+VIA1 = /A15 & A14 & A13
+
+; ROM active only for read (to avoid bus contention should the CPU attempt to write the hardwired OE ROM)
+ROM = PHI2 & /W & A15
+
+DESCRIPTION
+
+RAM: 64 pages (16 KiB)
+IO: 64 pages (16 KiB)
+ROM: 128 pages (32 KiB)
+
+Memory Map
+
+[0x0000, 0x4000): RAM
+[0x4000, 0x8000): IO
+[0x8000, 0xFFFF]: ROM
