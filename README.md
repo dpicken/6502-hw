@@ -16,8 +16,7 @@ The single board computer ([schematic](/pdf/sbc.pdf), [layout](pdf/sbc.pcb.pdf),
   - 32 KiB RAM
   - 3 VIAs (1 system, 2 user accessible)
   - USB serial
-  - microSD mass storage:
-    - Power enable signal (SD_PWR) connected to wrong VIA pin.  Bodge: bridge pins 39 and 40 of U9
+  - microSD mass storage
 
 ![sbc.pcb.jpeg](/jpeg/sbc.pcb.jpeg)
 
