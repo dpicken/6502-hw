@@ -6,8 +6,8 @@
 
   (title_block
     (title "6502 SBC")
-    (date "2022-03-07")
-    (rev "2.2")
+    (date "2023-02-07")
+    (rev "2.3")
   )
 
   (lib_symbols
@@ -1169,7 +1169,6 @@
   (no_connect (at 81.28 80.01) (uuid 89fb00fc-28ab-4b62-bc1e-1d97dfd574ae))
   (no_connect (at 81.28 82.55) (uuid 89fb00fc-28ab-4b62-bc1e-1d97dfd574af))
   (no_connect (at 81.28 85.09) (uuid 89fb00fc-28ab-4b62-bc1e-1d97dfd574b0))
-  (no_connect (at 81.28 90.17) (uuid 89fb00fc-28ab-4b62-bc1e-1d97dfd574b1))
   (no_connect (at 173.99 119.38) (uuid 93066aeb-5510-4489-975b-c6c8eceab18e))
 
   (wire (pts (xy 140.97 102.87) (xy 147.32 102.87))
@@ -1359,6 +1358,10 @@
   (wire (pts (xy 46.99 190.5) (xy 59.69 190.5))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ee6d02f4-6d7e-44e7-b8ea-74d7f3ede85c)
+  )
+  (wire (pts (xy 81.28 90.17) (xy 87.63 90.17))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid f7a10e84-4b9e-4236-82e0-f447fb7c9e64)
   )
   (wire (pts (xy 134.62 107.95) (xy 134.62 113.03))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2768,6 +2771,22 @@
     (pin "3" (uuid 6fa8342e-2989-40ca-b0ae-b207f17ca831))
   )
 
+  (symbol (lib_id "power:+5V") (at 87.63 90.17 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid b9cf334a-4975-4133-9f18-324d40fb7d09)
+    (property "Reference" "#PWR0145" (id 0) (at 87.63 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (id 1) (at 87.63 85.09 0))
+    (property "Footprint" "" (id 2) (at 87.63 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 87.63 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0a8d4dd3-7105-4b30-a701-b67f075af297))
+  )
+
   (symbol (lib_id "Device:C") (at 46.99 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c0081c63-f042-46b2-97e6-a52a763a2eb5)
@@ -3216,6 +3235,9 @@
     )
     (path "/005f7bba-a8a9-4e07-ad6d-de2e5146ff30/0f72f46f-239e-416f-9353-d74801712f96"
       (reference "#PWR0144") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/b9cf334a-4975-4133-9f18-324d40fb7d09"
+      (reference "#PWR0145") (unit 1) (value "+5V") (footprint "")
     )
     (path "/005f7bba-a8a9-4e07-ad6d-de2e5146ff30/f30f7237-8b62-45bb-9411-6953bbc30ae0"
       (reference "#PWR0150") (unit 1) (value "+5V") (footprint "")
